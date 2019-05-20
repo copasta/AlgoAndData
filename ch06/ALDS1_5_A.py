@@ -7,7 +7,7 @@ sumA = sum(A)
 def solve(i, mm):
     if mm == 0:
         return True
-    elif sumA < mm: 
+    elif mm < 0 or sumA < mm: 
         # sumA < mm が無い場合はTLEになる
         return False
     elif i >= n:
